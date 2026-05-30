@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: alb
 spec:
   rules:
-    - host: api.smatic.com  # This is for reference only, i dont have any active DNS records
+    - host: api.smaitic.com  # This is for reference only, i dont have any active DNS records
       http:
         paths:
           - path: /

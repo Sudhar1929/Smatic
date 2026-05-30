@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: node-api
-          image: artifactory.smatic.com/node-api:latest
+          image: artifactory.smaitic.com/node-api:latest
           ports:
             - name: api-web
               containerPort: 3000
