@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: node-api
+  namespace: production
+  annotations:
+    kubernetes.io/ingress.class: alb
+spec:
+  rules:
+    - host: api.smatic.com  # This is for reference only, i dont have any active DNS records
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: node-api
+                port:
+                  name: api-web
